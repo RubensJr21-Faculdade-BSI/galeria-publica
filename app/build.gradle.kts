@@ -33,6 +33,13 @@ android {
 
 dependencies {
 
+implementation(libs.paging.common.android)
+    //    implementation fileTree(dir: "libs", include: ["*.jar"])
+    val paging_version = "3.1.1"
+    // optional - Guava ListenableFuture support
+    implementation("androidx.paging:paging-guava:$paging_version")
+    implementation("androidx.paging:paging-runtime:$paging_version")
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
